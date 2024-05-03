@@ -1,11 +1,14 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchJobs } from "../redux/thunks/jobsThunk";
+import { applyFilterToJobs } from "../utils/applyFilterToJobs";
 
 export function useJobs() {
   const LIMIT = 10;
 
   const { isLoading, jobList, totalCount } = useSelector((state) => state.jobs);
+  const filters = useSelector((state) => state.filters);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -32,7 +35,7 @@ export function useJobs() {
   }, [isLoading, jobList.length, dispatch, totalCount]);
 
   return {
-    jobs: jobList, // TODO: apply filter
+    jobs: applyFilterToJobs(jobList, filters),
     isLoading,
   };
 }
