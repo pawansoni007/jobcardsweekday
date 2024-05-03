@@ -1,0 +1,1 @@
+export { capitalizeSentence } from "./capitalizeSentence";
