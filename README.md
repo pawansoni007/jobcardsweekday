@@ -1,3 +1,9 @@
+# Live link: 
+
+View the deployed version here to avoid setting up environment 😉
+
+Live link: [Candidate application platform](https://projectcards.azurewebsites.net/) 
+_______________________
 # How to run this application? 
 
 1. Open your terminal/cmd/git bash and write down the following command (Make sure you've git bash installed)
@@ -16,6 +22,4 @@ npm run preview
 
 Follow the instructions at screen and visit the site link given (localhost:4173).
 
-View the deployed version here to avoid setting up environment 😉
 
-Deployement link: [Candidate application platform](https://projectcards.azurewebsites.net/) 
