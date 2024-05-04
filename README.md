@@ -1,8 +1,25 @@
-# React + Vite
+# Live link: 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+View the deployed version here to avoid setting up environment 😉
 
-Currently, two official plugins are available:
+Live link: [Candidate application platform](https://projectcards.azurewebsites.net/) 
+_______________________
+# How to run this application? 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Open your terminal/cmd/git bash and write down the following command (Make sure you've git bash installed)
+
+```bash 
+git clone https://github.com/pawansoni007/jobcardsweekday.git
+```
+
+2. Navigate to `candidate-application-platform` folder and run the following commands in order.
+
+``` bash
+npm i ci
+npm i
+npm run preview
+```
+
+Follow the instructions at screen and visit the site link given (localhost:4173).
+
+
