@@ -51,7 +51,7 @@ export default function JobDescription({ description }) {
             }}
             onClick={() => setExpandDescription(true)}
           >
-            View Job
+            Read More
           </Button>
         </div>
       )}
