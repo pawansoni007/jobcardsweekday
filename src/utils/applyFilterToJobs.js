@@ -37,6 +37,19 @@ const isASingleValueFilterMatch = (jobKey, filterKey, filters, job) => {
 export function applyFilterToJobs(jobs, filters) {
   return jobs
     .filter((job) => {
+      if (filters["roles"].length > 0) {
+        if (job.jobRole === null || job.jobRole === undefined) {
+          return false;
+        }
+
+        const roles = filters["roles"].map(({ value }) => value);
+
+        return roles.includes(job.jobRole);
+      }
+
+      return true;
+    })
+    .filter((job) => {
       if (filters["minExperience"]) {
         if (job.minExp === null || job.minExp === undefined) {
           return false;

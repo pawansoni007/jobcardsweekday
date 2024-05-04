@@ -4,7 +4,7 @@ const initialState = {
   minBasePay: "",
   companyName: "",
   location: "",
-  role: "",
+  roles: [],
   techStack: "",
 };
 
